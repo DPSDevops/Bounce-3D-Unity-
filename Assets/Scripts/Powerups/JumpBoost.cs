@@ -21,7 +21,10 @@ public class JumpBoost : MonoBehaviour
                 player.AddJumpForce(jumpIncreaseAmount);
                 Debug.Log($"Jump Boost Collected! +{jumpIncreaseAmount} Jump Force");
                 
-                // Spawn effect if assigned
+                // Spawn particle effect
+                PowerupPickupEffect.SpawnEffect(transform.position, PowerupPickupEffect.PowerupType.JumpBoost);
+                
+                // Spawn additional effect if assigned
                 if (pickupEffect != null)
                 {
                     Instantiate(pickupEffect, transform.position, Quaternion.identity);

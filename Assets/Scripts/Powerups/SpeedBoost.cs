@@ -21,7 +21,10 @@ public class SpeedBoost : MonoBehaviour
                 player.AddSpeed(speedIncreaseAmount);
                 Debug.Log($"Speed Boost Collected! +{speedIncreaseAmount} Speed");
                 
-                // Spawn effect if assigned
+                // Spawn particle effect
+                PowerupPickupEffect.SpawnEffect(transform.position, PowerupPickupEffect.PowerupType.SpeedBoost);
+                
+                // Spawn additional effect if assigned
                 if (pickupEffect != null)
                 {
                     Instantiate(pickupEffect, transform.position, Quaternion.identity);
