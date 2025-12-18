@@ -2,8 +2,36 @@
 
 A physics-based 3D platformer built in Unity featuring a ball player character navigating challenging levels with powerups and checkpoints.
 
-![Gameplay Screenshot 1](Screenshots/gameplay_2.png)
-![Gameplay Screenshot 2](Screenshots/gameplay_1.png)
+## 📸 Gameplay Screenshots
+
+![Materials Showcase](Screenshots/materials_showcase.png)
+*Custom shader materials: Checkpoint stripes, holographic powerups, and glass effects*
+
+![Level Overview](Screenshots/level_overview.png)
+*Platform-based level design with visual effects*
+
+![Finish Area](Screenshots/finish_area.png)
+*Rainbow finish line with celebration effects*
+
+## 🎨 Visual Effects
+
+### Shader Materials
+- **Checkpoints**
+  - Inactive: Animated red/white diagonal stripes scrolling right-to-left
+  - Activated: Translucent glass with fresnel rim lighting and refraction
+- **Powerups**
+  - Holographic effects with animated scan lines and glitch distortions
+  - SpeedBoost: Cyan/blue color scheme
+  - JumpBoost: Orange/yellow color scheme
+- **Finish Line**
+  - Rainbow wave shader with HSV color cycling
+  - Vertex animation creating rippling surface
+  - Pulsing brightness and rim glow
+
+### Particle Effects
+- **Powerup Pickup**: Spiral burst particles with color-coded gradients
+- **Level Completion**: Rainbow firework celebration with multiple explosion waves
+- **Victory Launch**: Player shoots upward with massive force on finish
 
 ## 🎮 Features
 
