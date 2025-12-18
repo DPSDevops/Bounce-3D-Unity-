@@ -14,6 +14,9 @@ public class LevelFinish : MonoBehaviour
         if (collision.gameObject.CompareTag(playerTag))
         {
             Debug.Log("Level Done");
+            
+            // Spawn celebration particles
+            FinishCelebrationEffect.SpawnCelebration(transform.position);
         }
     }
 
@@ -26,6 +29,9 @@ public class LevelFinish : MonoBehaviour
         if (other.CompareTag(playerTag))
         {
             Debug.Log("Level Done");
+            
+            // Spawn celebration particles
+            FinishCelebrationEffect.SpawnCelebration(transform.position);
         }
     }
 }
