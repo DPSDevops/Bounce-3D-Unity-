@@ -10,6 +10,15 @@ public class Checkpoint : MonoBehaviour
     
     private bool isActivated = false;
 
+    private void Start()
+    {
+        // Apply inactive material at start
+        if (checkpointRenderer != null && inactiveMaterial != null)
+        {
+            checkpointRenderer.material = inactiveMaterial;
+        }
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         // Only trigger if player enters and not already activated
